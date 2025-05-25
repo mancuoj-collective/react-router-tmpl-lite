@@ -2,7 +2,7 @@ import { Links, Meta, Outlet, Scripts, ScrollRestoration, isRouteErrorResponse }
 
 import { TwScreenIndicator } from '@/components/tw-screen-indicator'
 import type { Route } from './+types/root'
-import '@/app.css'
+import '@/styles/globals.css'
 
 export const links: Route.LinksFunction = () => [
   { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
