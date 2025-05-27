@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-svh">
       <button type="button" className="btn btn-primary">
-        React Router
+        <a href="https://github.com/mancuoj-collective/remix-tmpl-lite" target="_blank" rel="noopener noreferrer">
+          React Router
+        </a>
       </button>
     </div>
   )
