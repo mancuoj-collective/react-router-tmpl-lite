@@ -4,7 +4,8 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "format": "prettier -w ."
   },
   "dependencies": {
     "@react-router/node": "^7.6.3",
@@ -31,6 +32,9 @@
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
     "vite": "^7.0.3",
-    "vite-tsconfig-paths": "^5.1.4"
-  }
+    "vite-tsconfig-paths": "^5.1.4",
+    "prettier": "latest",
+    "@mancuoj/prettier-config": "latest"
+  },
+  "prettier": "@mancuoj/prettier-config"
 }
