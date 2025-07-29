@@ -40,7 +40,7 @@ importers:
         specifier: ^5.2.8
         version: 5.2.8
       '@mancuoj/prettier-config':
-        specifier: latest
+        specifier: ^0.5.1
         version: 0.5.1
       '@react-router/dev':
         specifier: ^7.7.1
@@ -67,7 +67,7 @@ importers:
         specifier: ^0.526.0
         version: 0.526.0(react@19.1.0)
       prettier:
-        specifier: latest
+        specifier: ^3.6.2
         version: 3.6.2
       tailwind-merge:
         specifier: ^3.3.1
