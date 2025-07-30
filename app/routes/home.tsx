@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-svh">
       <button type="button" className="btn btn-primary">
         <a
-          href="https://github.com/mancuoj-collective/remix-tmpl-lite"
+          href="https://github.com/mancuoj-collective/react-router-tmpl-lite"
           target="_blank"
           rel="noopener noreferrer"
         >
