@@ -41,13 +41,13 @@ importers:
         version: 5.2.10
       '@mancuoj/prettier-config':
         specifier: ^0.5.4
-        version: 0.5.4
+        version: 0.5.4(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
       '@react-router/dev':
         specifier: ^7.14.0
-        version: 7.14.0(@react-router/serve@7.14.0(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2))(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))
+        version: 7.14.0(@react-router/serve@7.14.0(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2))(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)(vite@8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))
       '@tailwindcss/vite':
         specifier: ^4.2.2
-        version: 4.2.2(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))
+        version: 4.2.2(vite@8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))
       '@types/node':
         specifier: ^24.12.2
         version: 24.12.2
@@ -80,10 +80,10 @@ importers:
         version: 6.0.2
       vite:
         specifier: ^8.0.3
-        version: 8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)
+        version: 8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)
       vite-tsconfig-paths:
         specifier: ^6.1.1
-        version: 6.1.1(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))
+        version: 6.1.1(typescript@6.0.2)(vite@8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))
 
 packages:
 
@@ -420,8 +420,11 @@ packages:
   '@mjackson/node-fetch-server@0.2.0':
     resolution: {integrity: sha512-EMlH1e30yzmTpGLQjlFmaDAjyOeZhng1/XCd7DExR8PNAnG/G1tyruZxEoUe11ClnwGhGrtsdnyyUx1frSzjng==}
 
-  '@napi-rs/wasm-runtime@1.1.1':
-    resolution: {integrity: sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A==}
+  '@napi-rs/wasm-runtime@1.1.2':
+    resolution: {integrity: sha512-sNXv5oLJ7ob93xkZ1XnxisYhGYXfaG9f65/ZgYuAu3qt7b3NadcOEhLvx28hv31PgX8SZJRYrAIPQilQmFpLVw==}
+    peerDependencies:
+      '@emnapi/core': ^1.7.1
+      '@emnapi/runtime': ^1.7.1
 
   '@oxc-parser/binding-android-arm64@0.99.0':
     resolution: {integrity: sha512-V4jhmKXgQQdRnm73F+r3ZY4pUEsijQeSraFeaCGng7abSNJGs76X6l82wHnmjLGFAeY00LWtjcELs7ZmbJ9+lA==}
@@ -1049,8 +1052,8 @@ packages:
     resolution: {integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
 
-  detect-libc@2.0.4:
-    resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
+  detect-libc@2.1.2:
+    resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
   dunder-proto@1.0.1:
@@ -1641,8 +1644,8 @@ packages:
     peerDependencies:
       vite: '*'
 
-  vite@7.3.1:
-    resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
+  vite@7.3.2:
+    resolution: {integrity: sha512-Bby3NOsna2jsjfLVOHKes8sGwgl4TT0E6vvpYgnAYDIF/tie7MRaFthmKuHx1NSXjiTueXH3do80FMQgvEktRg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1681,14 +1684,14 @@ packages:
       yaml:
         optional: true
 
-  vite@8.0.3:
-    resolution: {integrity: sha512-B9ifbFudT1TFhfltfaIPgjo9Z3mDynBTJSUYxTjOQruf/zHH+ezCQKcoqO+h7a9Pw9Nm/OtlXAiGT1axBgwqrQ==}
+  vite@8.0.5:
+    resolution: {integrity: sha512-nmu43Qvq9UopTRfMx2jOYW5l16pb3iDC1JH6yMuPkpVbzK0k+L7dfsEDH4jRgYFmsg0sTAqkojoZgzLMlwHsCQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
       '@types/node': ^20.19.0 || >=22.12.0
       '@vitejs/devtools': ^0.1.0
-      esbuild: ^0.27.0
+      esbuild: ^0.27.0 || ^0.28.0
       jiti: '>=1.21.0'
       less: ^4.0.0
       sass: ^1.70.0
@@ -2044,16 +2047,19 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mancuoj/prettier-config@0.5.4':
+  '@mancuoj/prettier-config@0.5.4(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)':
     dependencies:
       '@antfu/install-pkg': 1.1.0
-      '@prettier/plugin-oxc': 0.1.3
+      '@prettier/plugin-oxc': 0.1.3(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
       local-pkg: 1.1.2
       picocolors: 1.1.1
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   '@mjackson/node-fetch-server@0.2.0': {}
 
-  '@napi-rs/wasm-runtime@1.1.1':
+  '@napi-rs/wasm-runtime@1.1.2(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)':
     dependencies:
       '@emnapi/core': 1.7.1
       '@emnapi/runtime': 1.7.1
@@ -2096,9 +2102,12 @@ snapshots:
   '@oxc-parser/binding-linux-x64-musl@0.99.0':
     optional: true
 
-  '@oxc-parser/binding-wasm32-wasi@0.99.0':
+  '@oxc-parser/binding-wasm32-wasi@0.99.0(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.1.1
+      '@napi-rs/wasm-runtime': 1.1.2(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
     optional: true
 
   '@oxc-parser/binding-win32-arm64-msvc@0.99.0':
@@ -2111,11 +2120,14 @@ snapshots:
 
   '@oxc-project/types@0.99.0': {}
 
-  '@prettier/plugin-oxc@0.1.3':
+  '@prettier/plugin-oxc@0.1.3(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)':
     dependencies:
-      oxc-parser: 0.99.0
+      oxc-parser: 0.99.0(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
-  '@react-router/dev@7.14.0(@react-router/serve@7.14.0(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2))(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))':
+  '@react-router/dev@7.14.0(@react-router/serve@7.14.0(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2))(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)(vite@8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/generator': 7.28.0
@@ -2145,7 +2157,7 @@ snapshots:
       semver: 7.7.1
       tinyglobby: 0.2.15
       valibot: 1.2.0(typescript@6.0.2)
-      vite: 8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)
+      vite: 8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)
       vite-node: 3.2.4(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)
     optionalDependencies:
       '@react-router/serve': 7.14.0(react-router@7.14.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)
@@ -2233,9 +2245,12 @@ snapshots:
   '@rolldown/binding-openharmony-arm64@1.0.0-rc.12':
     optional: true
 
-  '@rolldown/binding-wasm32-wasi@1.0.0-rc.12':
+  '@rolldown/binding-wasm32-wasi@1.0.0-rc.12(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.1.1
+      '@napi-rs/wasm-runtime': 1.1.2(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
     optional: true
 
   '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.12':
@@ -2373,12 +2388,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.2.2
       '@tailwindcss/oxide-win32-x64-msvc': 4.2.2
 
-  '@tailwindcss/vite@4.2.2(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))':
+  '@tailwindcss/vite@4.2.2(vite@8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1))':
     dependencies:
       '@tailwindcss/node': 4.2.2
       '@tailwindcss/oxide': 4.2.2
       tailwindcss: 4.2.2
-      vite: 8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)
+      vite: 8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
@@ -2523,7 +2538,7 @@ snapshots:
 
   destroy@1.2.0: {}
 
-  detect-libc@2.0.4: {}
+  detect-libc@2.1.2: {}
 
   dunder-proto@1.0.1:
     dependencies:
@@ -2749,7 +2764,7 @@ snapshots:
 
   lightningcss@1.32.0:
     dependencies:
-      detect-libc: 2.0.4
+      detect-libc: 2.1.2
     optionalDependencies:
       lightningcss-android-arm64: 1.32.0
       lightningcss-darwin-arm64: 1.32.0
@@ -2842,7 +2857,7 @@ snapshots:
 
   on-headers@1.1.0: {}
 
-  oxc-parser@0.99.0:
+  oxc-parser@0.99.0(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1):
     dependencies:
       '@oxc-project/types': 0.99.0
     optionalDependencies:
@@ -2858,9 +2873,12 @@ snapshots:
       '@oxc-parser/binding-linux-s390x-gnu': 0.99.0
       '@oxc-parser/binding-linux-x64-gnu': 0.99.0
       '@oxc-parser/binding-linux-x64-musl': 0.99.0
-      '@oxc-parser/binding-wasm32-wasi': 0.99.0
+      '@oxc-parser/binding-wasm32-wasi': 0.99.0(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
       '@oxc-parser/binding-win32-arm64-msvc': 0.99.0
       '@oxc-parser/binding-win32-x64-msvc': 0.99.0
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   p-map@7.0.3: {}
 
@@ -2937,7 +2955,7 @@ snapshots:
 
   readdirp@4.1.2: {}
 
-  rolldown@1.0.0-rc.12:
+  rolldown@1.0.0-rc.12(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1):
     dependencies:
       '@oxc-project/types': 0.122.0
       '@rolldown/pluginutils': 1.0.0-rc.12
@@ -2954,9 +2972,12 @@ snapshots:
       '@rolldown/binding-linux-x64-gnu': 1.0.0-rc.12
       '@rolldown/binding-linux-x64-musl': 1.0.0-rc.12
       '@rolldown/binding-openharmony-arm64': 1.0.0-rc.12
-      '@rolldown/binding-wasm32-wasi': 1.0.0-rc.12
+      '@rolldown/binding-wasm32-wasi': 1.0.0-rc.12(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
       '@rolldown/binding-win32-arm64-msvc': 1.0.0-rc.12
       '@rolldown/binding-win32-x64-msvc': 1.0.0-rc.12
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   rollup@4.52.5:
     dependencies:
@@ -3125,7 +3146,7 @@ snapshots:
       debug: 4.4.1
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)
+      vite: 7.3.2(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -3140,17 +3161,17 @@ snapshots:
       - tsx
       - yaml
 
-  vite-tsconfig-paths@6.1.1(typescript@6.0.2)(vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)):
+  vite-tsconfig-paths@6.1.1(typescript@6.0.2)(vite@8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)):
     dependencies:
       debug: 4.4.1
       globrex: 0.1.2
       tsconfck: 3.1.5(typescript@6.0.2)
-      vite: 8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)
+      vite: 8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0):
+  vite@7.3.2(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0):
     dependencies:
       esbuild: 0.27.2
       fdir: 6.5.0(picomatch@4.0.4)
@@ -3164,17 +3185,20 @@ snapshots:
       jiti: 2.6.1
       lightningcss: 1.32.0
 
-  vite@8.0.3(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1):
+  vite@8.0.5(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@types/node@24.12.2)(esbuild@0.27.2)(jiti@2.6.1):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
       postcss: 8.5.8
-      rolldown: 1.0.0-rc.12
+      rolldown: 1.0.0-rc.12(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)
       tinyglobby: 0.2.15
     optionalDependencies:
       '@types/node': 24.12.2
       esbuild: 0.27.2
       fsevents: 2.3.3
       jiti: 2.6.1
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
 
   yallist@3.1.1: {}
