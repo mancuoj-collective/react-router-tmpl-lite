@@ -25,15 +25,15 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
+    "@types/react-dom": "^19.2.5",
     "clsx": "^2.1.1",
     "daisyui": "latest",
-    "lucide-react": "^1.31.0",
+    "lucide-react": "^1.33.0",
     "prettier": "^3.9.6",
     "tailwind-merge": "^3.6.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
-    "vite": "^8.2.1",
+    "vite": "^8.2.2",
     "vite-tsconfig-paths": "^6.1.1"
   },
   "prettier": "@mancuoj/prettier-config"
